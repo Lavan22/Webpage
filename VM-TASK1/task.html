@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ad46fab035.js" crossorigin="anonymous"></script>
+    <title>namma ooru taxi</title>
+    <link rel="stylesheet" href="task.css">
+    <link
+      rel="stylesheet"
+      data-purpose="Layout StyleSheet"
+      title="Web Awesome"
+      href="/css/app-wa-02670e9412103b5852dcbe140d278c49.css?vsn=d"
+    >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-regular.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-light.css"
+      >
+    </head>
+    <body>
+        <nav class="sidebar close">
+            <header>
+                <div class="image-text">
+                    <span class="image">
+                      <img src="/images/taxi.jpeg" alt="logo" class="src">
+                    </span>
+    
+                <div class="text header-text">
+                    <span class="name">நம்ம ஊரு டாக்ஸி</span>
+                </div>
+                </div>
+                <i class="fa-regular fa-arrow-left-from-arc toggle"></i>
+            </header>
+            <div class="menu-bar">
+                 <div class="menu">
+                    <li class="dashboard">
+                        <a href="#">
+                            <div class="icon-container">
+                            <i class="fa-solid fa-tv icon"></i>
+                            </div>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="Live-tracking">
+                        <a href="#">
+                            <div class="icon-container1">
+                                <i class="fa-regular fa-satellite-dish icon" style="color: #319bc9;"></i>
+                            </div>
+                            <span class="text nav-text">Live Tracking</span>
+                        </a>
+                    </li>
+                    <li class="Driver-Management">
+                        <a href="#">
+                            <div class="icon-container2">
+                                <i class="fa-regular fa-user-police icon" style="color: #328485;"></i>
+                            </div>
+                            <span class="text nav-text">Driver Management</span>
+                        
+                        </a>
+                    </li>
+                    <li class="Vehicle-Management" id="vehicle" onclick="toggleTable()">
+                        <a href="#" data-target="section1">
+                            <div class="icon-container3">
+                                <i class="fa-solid fa-car-mirrors icon" style="color: #6b4bc3;"></i>
+                            </div>
+                            <span class="text nav-text">Vehicle Management</span>
+                            
+                        </a>
+                    </li>
+                    <li class="Manage-Rides">
+                        <a href="#">
+                            <div class="icon-container4">
+                                <i class="fa-regular fa-car-building icon" style="color: #2c882b;"></i> 
+                            </div>
+                            <span class="text nav-text">Manage Rides</span>
+                        </a>
+                    </li>
+                    <li class="Employees">
+                        <a href="#">
+                            <div class="icon-container5">
+                                <i class="fa-regular fa-user-group icon" style="color: #917830;"></i>
+                            </div>
+                            <span class="text nav-text">Employees</span>
+                        </a>
+                    </li>
+                    <li class="Clients">
+                        <a href="#">
+                            <div class="icon-container6">
+                                <i class="fa-regular fa-users icon" style="color: #d62424;"></i>
+                            </div>
+                            <span class="text nav-text">Clients</span>
+                        </a>
+                    </li>
+                    <li class="Trip History">
+                        <a href="#">
+                            <div class="icon-container7">
+                                <i class="fa-regular fa-suitcase-rolling icon" style="color: #83389f;"></i>
+                            </div>
+                            <span class="text nav-text">Trip History</span>
+                        </a>
+                    </li>
+                    <li class="Payments">
+                        <a href="#">
+                            <div class="icon-container8">
+                                <i class="fa-regular fa-receipt icon" style="color: #573187;"></i>
+                            </div>
+                            <span class="text nav-text">Payments</span>
+                        </a>
+                    </li>
+                    <li class="Reports">
+                        <a href="#">
+                            <div class="icon-container9">
+                                <i class="fa-regular fa-file-chart-pie icon" style="color: #d94545;"></i>
+                            </div>
+                            <span class="text nav-text">Reports</span>
+                        </a>
+                    </li>
+                    <li class="Fare Database">
+                        <a href="#">
+                            <div class="icon-container10">
+                                <i class="fa-regular fa-coins icon" style="color: #695b11;"></i>
+                            </div>
+                            <span class="text nav-text">Fare Database</span>
+                        </a>
+                    </li>
+                    <li class="Support Tickets">
+                        <a href="#">
+                            <div class="icon-container11">
+                                <i class="fa-solid fa-headset icon" style="color: #ed832c;"></i>
+                            </div>
+                            <span class="text nav-text">Support Tickets</span>
+                        </a>
+                    </li>
+                    <li class="Settings">
+                        <a href="#">
+                            <div class="icon-container12">
+                                <i class="fa-regular fa-gear icon" style="color: #354f7e;"></i>
+                            </div>
+                            <span class="text nav-text">Settings</span>
+                        </a>
+                    </li>
+                   
+
+                 </div>
+            </div>
+            </nav>
+
+            <div class="table" id="top" style="display: none;">
+                <p class="text1">Vehicle Management</p>
+                <p class="text2"  >/All Vehicle</p>
+                <p class="time">Dec 05 2022/10:00 AM</p>
+                <div class="calender">
+                    <i class="fa-regular fa-calendar-clock icon" style="color: #000000;"></i>
+                </div>
+                <div class="message">
+                    <i class="fa-regular fa-message-dots icon" style="color: #000000;"></i>
+                </div>
+                <div class="bell">
+                    <i class="fa-regular fa-bell icon" style="color: #000000;"></i>
+                </div>
+                <div class="user">
+                  <p class="user">Ezio Auditore</p>
+                  <p class="user1">Admin</p>
+                 </div>
+                  <span class="profile">
+                  <img style="width: 40px;height: 40px;"   src="/images/profile.png" alt="profile">
+                  </span>
+                  <nav>
+                      <div id="All-vehicle" name="All-vehicle">
+                      <a href="#" onclick="toggleTable1()">All Vehicles</a>
+                      </div>
+                      <a href="#">Inspection Pending</a>
+                      <a href="#">Manage Approval</a>
+                      <a href="#">Document Expiry</a>
+                      <span></span>
+                  </nav>
+                 <div class="boxes">
+                    <div class="box box1">
+                    <i class="fa-solid fa-car car1-icon" style="color: #4967df;"></i>
+                    <i class="fa-solid fa-bars icon-base" style="color: #4967df"></i>
+                    <span class="number1">500</span>
+                    <span class="text">Total Vehicles</span>
+                    <i class="fa-duotone fa-ellipsis-vertical icon-circle" style="color: #4967df;"></i>
+                    </div>
+                    <div class="box box2">
+                        <i class="fa-solid fa-car car-icon" style="color: #4dd043;"></i>
+                        <i class="fa-regular fa-wave-pulse icon-base" style="color: #4dd043;"></i>
+                        <span class="number2">480</span>
+                        <span class="text">Active Vehicles</span>
+                        <i class="fa-duotone fa-ellipsis-vertical icon-circle" style="color: #4dd043;"></i>
+                        </div>
+
+                        <div class="box box3">
+                            <i class="fa-solid fa-car car-icon" style="color: #ea3e3e;"></i>
+                            <i class="fa-solid fa-power-off icon-base" style="color: #ea3e3e;"></i>
+                            <span class="number">10</span>
+                            <span class="text">Inactive Vehicles</span>
+                            <i class="fa-duotone fa-ellipsis-vertical icon-circle" style="color: #ea3e3e;"></i>
+                            </div>
+                            <div class="box box4">
+                                <i class="fa-solid fa-car car-icon" style="color: #e07b29;"></i>
+                                <i class="fa-regular fa-face-sleeping icon-base"  style="color: #e07b29;"></i>
+                                <span class="number">10</span>
+                                <span class="text">Idle Vehicles</span>
+                                <i class="fa-duotone fa-ellipsis-vertical icon-circle" style="color: #e07b29;"></i>
+                                </div>
+                                <div class="box box5">
+                                    <i class="fa-solid fa-car car-icon" style="color: #dcc23c;"></i>
+                                    <i class="fa-sharp fa-solid fa-timer icon-base" style="color: #dcc23c;"></i>
+                                    <span class="number">20</span>
+                                    <span class="text">Vehicle Approval Pending</span>
+                                    <i class="fa-duotone fa-ellipsis-vertical icon-circle" style="color: #dcc23c;"></i>
+                                    </div>
+                                    <div class="box box6">
+                                        <i class="fa-solid fa-car car-icon" style="color: #ac4e1b;"></i>
+                                        <i class="fa-regular fa-hexagon-xmark icon-base" style="color: #ac4e1b;"></i>
+                                        <span class="number">2</span>
+                                        <span class="text">Vehicle Appeoval Rejected</span>
+                                        <i class="fa-duotone fa-ellipsis-vertical icon-circle" style="color: #ac4e1b;"></i>
+                                        </div>
+                                                                                
+
+                 </div>
+                 <div class="nav-bar2">
+                    <div class="searchbox">
+                        <input type="text" placeholder="Search" style="border-radius: 3px; border-color:white; width: 100px;" >
+                        <i class="fa-solid fa-magnifying-glass glass" style="color: rgba(35, 34, 34, 0.734);"></i>
+                    </div>
+                    <div class="inspection" >
+                         <select class="inspect" style="width: 125px;">
+                
+                                        <option value="ACTIVE" class="active">Inspection Status</option>
+                
+                                        <option value="INACTIVE" class="inactive">INACTIVE</option>
+                                    </select>
+                    </div>
+                   <div class="Vehicle Status"  >
+                    <select class="vehicle-status" style="width: 125px;">
+           
+                                   <option value="ACTIVE" class="active">Vehicle Status</option>
+           
+                                   <option value="INACTIVE" class="inactive">INACTIVE</option>
+                               </select>
+               </div>
+               <div class="Data Range"  >
+                <select class="data-range" style="width: 125px;">
+       
+                               <option value="ACTIVE" class="active">Data Range</option>
+       
+                               <option value="INACTIVE" class="inactive">INACTIVE</option>
+                           </select>
+           </div>
+           <div class="Type"  >
+            <select class="type" style="width: 125px;">
+   
+                           <option value="ACTIVE" class="active">Type</option>
+   
+                           <option value="INACTIVE" class="inactive">INACTIVE</option>
+                       </select>
+                     </div>
+                <div class="Engaged" >
+                    <select class="engaged" style="width: 125px;">
+           
+                                   <option value="ACTIVE" class="active">Engaged</option>
+           
+                                   <option value="INACTIVE" class="inactive">Engaged</option>
+                               </select>
+                             </div>
+                             <div class="25" >
+                                <select class="num" style="width: 200px;">
+                       
+                                               <option value="ACTIVE" class="active">25</option>
+                       
+                                               <option value="INACTIVE" class="inactive">Engaged</option>
+                                           </select>
+                                         </div>
+                <div class="filter">
+                    <i class="fa-regular fa-filter" style="color:white;"></i>
+                </div>
+                <div class="download">
+                    <i class="fa-regular fa-upload" style="color: white;"></i>
+                </div>
+                <div class="file">
+                    <i class="fa-regular fa-file-export" style="color: white;"></i>
+                </div>
+                <div class="add">
+                    <span class="add">+ Add New Vehicle</span>
+                </div>
+                </div>
+                </div>
+
+              <div class="content">
+                <section id="section1">
+                    <table class="table" id="myTable" style="display: none;">
+
+                        <thead class="head">
+                
+                            <tr class="tr">
+                
+                                <th>SL NO</th>
+                
+                                <th>REGISTRATION NO</th>
+                
+                                <th>VEHICLE NO</th>
+                
+                                <th>TYPE</th>
+                
+                                <th>OWNER NAME</th>
+                
+                                <th>PHONE NUMBER</th>
+                
+                                <th>EMAIL ADDRESS</th>
+                
+                                <th>BRAND</th>
+                
+                                <th>MODEL</th>
+                
+                                <th>ENGAGED</th>
+                
+                                <th>REGISTERED DATE</th>
+                
+                                <th>INSECPECTION STATUS</th>
+                
+                                <th>VEHICLE STATE</th>
+                
+                                <th>ACTION</th>
+                
+                            </tr>
+                
+                        </thead>
+                
+                        <tbody>
+                
+                            <tr>
+                
+                                <td>1</td>
+                
+                                <td>TN 01 AB 1234</td>
+                
+                                <td>NOTVH0001</td>
+                
+                                <td>Lease</td>
+                
+                                <td>Ezio Auditore</td>
+                
+                                <td>9876543210</td>
+                
+                                <td>ezioauditore@gmail.com</td>
+                
+                                <td>Maruti Suzuki</td>
+                
+                                <td>Swift LXI</td>
+                
+                                <td>Yes</td>
+                
+                                <td>01 Jan 2023</td>
+                
+                                <td class="td">
+                
+                                    <select id="select" class="pendingbar">
+                                        <option value="Pending" class="Pending">Pending</option>
+                
+                                        <option value="Inspected" class="Inspected">Inspected</option>
+                
+                                        <option value="Client Approval" class="Client-Approval">Client Approval</option>
+                
+                                        <option value="Rejected" class="Rejected">Rejected</option>
+                
+                                        <option value="Incomplete" class="Incomplete">Incomplete</option>
+                
+                                    </select>
+                
+                                </td>
+                
+                                <td>
+                
+                                    <select class="activebar">
+                
+                                        <option value="ACTIVE" class="active">Active</option>
+                
+                                        <option value="INACTIVE" class="inactive">Inactive</option>
+                
+                                        <option value="IDLE" class="idle">Idle</option>
+                
+                                        <option value="TEMPORARILY BLOCKED" class="temporarily-blocked">Temporarily Blocked</option>
+                
+                                        <option value="PERMANENTLY LOCKED" class="permanently-locked">Permanently Locked</option>
+                
+                
+                                    </select>
+                
+                                </td>
+                
+                                <td>
+                                    <a href="#"><i class="fa-solid fa-eye icon-eye" style="color: #4783ea;"></i><a>
+                                    <a href="#"><i class="fa-solid fa-pencil icon-pen" style="color: #eada47;"></i><a>
+                                    <a href="#"><i class="fa-solid fa-trash-xmark icon-x" style="color: #e54343;"></i></a>
+                                </td>
+                
+                            </tr>
+
+                            <tr>
+                
+                                <td>2</td>
+                
+                                <td>TN 01 AB 5678</td>
+                
+                                <td>NOTVH0002</td>
+                
+                                <td>Attached</td>
+                
+                                <td>Alexander</td>
+                
+                                <td>9876543210</td>
+                
+                                <td>alaexander@gmail.com</td>
+                
+                                <td>Hyunadi</td>
+                
+                                <td>i10 s(O)</td>
+                
+                                <td>No</td>
+                
+                                <td>01 Jan 2023</td>
+                
+                                <td>
+                
+                                    <select id="select" class="pendingbar">
+                
+                                        <option value="Pending" class="Pending">Pending</option>
+                
+                                        <option value="Inspected" class="Inspected">Inspected</option>
+                
+                                        <option value="Client Approval" class="Client-Approval">Client Approval</option>
+                
+                                        <option value="Rejected" class="Rejected">Rejected</option>
+                
+                                        <option value="Incomplete" class="Incomplete">Incomplete</option>
+                
+                                    </select>
+                
+                                </td>
+                
+                                <td>
+                
+                                    <select class="activebar">
+                
+                                        <option value="ACTIVE" class="active">Active</option>
+                
+                                        <option value="INACTIVE" class="inactive">Inactive</option>
+                
+                                        <option value="IDLE" class="idle">Idle</option>
+                
+                                        <option value="TEMPORARILY BLOCKED" class="temporarily-blocked">Temporarily Blocked</option>
+                
+                                        <option value="PERMANENTLY LOCKED" class="permanently-locked">Permanently Locked</option>
+                
+                                    </select>
+                
+                                </td>
+                
+                                <td>
+                                    <a href="#"><i class="fa-solid fa-eye icon-eye" style="color: #4783ea;"></i><a>
+                                    <a href="#"><i class="fa-solid fa-pencil icon-pen" style="color: #eada47;"></i><a>
+                                    <a href="#"><i class="fa-solid fa-trash-xmark icon-x" style="color: #e54343;"></i></a>
+                                </td>
+                
+                            </tr>
+                
+                      
+                
+                        </tbody>
+                
+                    </table>
+                </section>
+              </div>
+        
+        <script src="task.js"></script>
+    </body>
+</html>
