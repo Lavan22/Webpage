@@ -1,0 +1,132 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700&family=Urbanist:wght@200;400;600&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+font-family: 'Urbanist', sans-serif;
+}
+
+.login-container2{
+    display: flex;
+    flex-direction: column;
+    background-color:white;
+    justify-content:center ;
+    max-width:25em;
+    max-height:100vh;
+    border-radius: 25px;
+    margin-left: 10%;
+}
+.responsive-image{
+    max-width: 100%;
+    height: auto;
+    display:flex;
+    float:right;
+}
+@media (max-width: 767px) {
+    .responsive-image {
+        display: none;/* Adjust the image width as needed for mobile */
+    }
+}
+/* Media query for larger screens (768px and above) */
+@media (min-width: 768px) {
+    .responsive-image {
+        width: 50%; /* Adjust the image width as needed for laptops/desktops */
+    }
+}
+.text1{
+    color: black;
+    font-weight: bolder;
+}
+.text2{
+    color:#5869ff;
+    font-weight:bolder;
+}
+.login{
+    padding-top: 50px;
+    font-size: 50px;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+.content{
+    padding-top: 10px;
+    word-spacing: 0.2em;
+    font-weight: bold;
+    opacity:calc(90%);
+}
+.input-container{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 20px;
+    font-size: 15px;
+    font-weight:bold;
+    opacity:calc(90%);
+}
+.box1{
+    padding-left: 15px;
+    font-weight:bold;
+    opacity:calc(90%);
+}
+input[type="checkbox"] {
+    width: 17px; /* Set the width to your desired size */
+    height: 17px; /* Set the height to your desired size */
+  }
+.input-container input{
+    height:20px;
+    width: 25em;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 15px;
+    border-color: rgba(0, 0, 0, 0.444);
+}
+.checkbox{
+    padding-top: 30px;
+    padding-bottom:10px;
+}
+
+
+.button-login button
+{
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#5869ff;
+    width: 30em;
+    height: 4em;
+    border-radius: 10px;
+    color:white;
+    border-color: #5869ff;
+    font-weight: bold;
+    text-decoration: none;
+}
+.button-login{
+    padding-top: 40px;
+    box-shadow: #5869ff;
+    text-decoration: none;
+}
+.forgetpassword{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+   
+   
+}
+.no-underline{
+    text-decoration: none;
+    color:#5869ff ;
+    font-weight: bold;
+    
+}
+.signup{
+    padding-top: 40px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-weight: bold;
+}

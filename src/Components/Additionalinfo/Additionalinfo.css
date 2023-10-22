@@ -1,0 +1,60 @@
+.Personaldetails{
+  display: flex;
+  flex-direction: row;
+}
+.Box{
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  display: inline-block;
+  padding-left:6%;
+}
+.login-container{
+  display: flex;
+  flex-direction: column;
+  background-color:white;
+  justify-content:center ;
+  max-width:25em;
+  max-height:100vh;
+  border-radius: 25px;
+  margin-left:10%;
+  padding-top: 60px;
+}
+.Step{
+  max-height: 10px;
+  max-width:  250px;
+}
+.back{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  padding-top: 20px;
+}
+.no-underline1{
+  text-decoration: none;
+  font-weight:bold;
+  color: black ;
+  opacity: calc(80%);
+}
+@media (max-width: 767px) {
+  .responsive-image1 {
+      display: none;/* Adjust the image width as needed for mobile */
+  }
+  .Box{
+      padding-left: 0%;
+  }
+}
+/* Media query for larger screens (768px and above) */
+@media (min-width: 768px) {
+  .responsive-image1 {
+      width: 50%; /* Adjust the image width as needed for laptops/desktops */
+  }
+}
+.signup1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 130px;
+  font-weight: bold;
+}
